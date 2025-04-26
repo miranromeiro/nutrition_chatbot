@@ -1,6 +1,6 @@
 # Chatbot de Nutrição
 
-Este é um projeto inicial de um chatbot especialista em Nutrição. O chatbot utiliza técnicas de TF-IDF e Similaridade Cosseno para selecionar a resposta mais adequada a partir de uma base de conhecimento pré-definida.
+Este é um projeto de um chatbot especialista em Nutrição. O chatbot utiliza técnicas de TF-IDF e Similaridade Cosseno para selecionar a resposta mais adequada a partir de uma base de conhecimento pré-definida.
 
 ## Estrutura do Projeto
 
