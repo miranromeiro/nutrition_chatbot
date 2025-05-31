@@ -19,8 +19,14 @@ Este é um projeto de um chatbot especialista em Nutrição. O chatbot utiliza t
    - Instale o scikit-learn via pip:
    
      ```
-     pip install scikit-learn
+      pip install scikit-learn
      ```
-
+   - Instale o SpeechRecognition e PyAudio via pip:  
+     ```
+      pip install SpeechRecognition
+     ```
+     ```
+      pip install PyAudio
+     ```
 3. Execute o aplicativo:
 
