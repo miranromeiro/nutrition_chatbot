@@ -5,17 +5,19 @@ from .reconhecimento_voz import ouvir_microfone
 
 def enviar():
     pergunta = entrada.get()
-    resposta = backend.responder(pergunta)
+    resposta = backend.responder(pergunta)  # Apenas 1 valor retornado
     chat.insert(tk.END, "Você: " + pergunta + "\n")
     chat.insert(tk.END, "Bot: " + resposta + "\n\n")
     entrada.delete(0, tk.END)
     chat.see(tk.END)
 
 
+
+
 def enviar_por_voz():
     pergunta = ouvir_microfone()
     if pergunta:
-        resposta = backend.responder(pergunta)
+        resposta = backend.responder(pergunta)  # Apenas 1 valor retornado
         chat.insert(tk.END, "Você (voz): " + pergunta + "\n")
         chat.insert(tk.END, "Bot: " + resposta + "\n\n")
         chat.see(tk.END)
@@ -84,10 +86,10 @@ def exibir_conversa(texto):
     chat.insert(tk.END, texto + "\n")
     chat.see(tk.END)
 
-
 def enviar_pergunta_voz():
     pergunta = ouvir_microfone()
     if pergunta:
-        resposta = backend.responder(pergunta)
+        resposta, sentimento = backend.responder(pergunta)
         exibir_conversa(f"Você (voz): {pergunta}")
         exibir_conversa(f"Bot: {resposta}")
+        exibir_conversa(f"[Sentimento detectado: {sentimento}]\n")
