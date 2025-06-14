@@ -28,5 +28,18 @@ Este é um projeto de um chatbot especialista em Nutrição. O chatbot utiliza t
      ```
       pip install PyAudio
      ```
+      - Instale o nltk:
+   
+     ```
+      pip install nltk
+
+     ```
+      - Instale o Deep-translator:
+   
+     ```
+      pip install deep-translator
+
+     ```
+
 3. Execute o aplicativo:
 
