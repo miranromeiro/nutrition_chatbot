@@ -56,9 +56,6 @@ def responder(pergunta_usuario):
         resposta = "Fico feliz em ouvir isso! " + resposta
 
     return resposta
-
-
-def ouvir_microfone():
     reconhecedor = sr.Recognizer()
 
     with sr.Microphone() as fonte:
